@@ -42,7 +42,6 @@ function App() {
   const [wrongCount, setWrongCount] = useState(0);
   const [hoveredOption, setHoveredOption] = useState(null);
 
-  // Sync selections
   useEffect(() => {
     const currentData =
       mode === "topic" ? subjectData.topic : subjectData.chapter;
@@ -69,7 +68,6 @@ function App() {
     setWrongCount(0);
   };
 
-  // Load Questions
   useEffect(() => {
     const currentData =
       mode === "topic" ? subjectData.topic : subjectData.chapter;
